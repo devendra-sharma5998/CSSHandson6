@@ -1,0 +1,219 @@
+body {
+    background-image: url(./img.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+}
+
+.list {
+    margin-left: 850px;
+    margin-top: 30px;
+    color: white;
+}
+
+
+
+nav li {
+    
+    list-style: none;
+    float: left;
+    padding: 15px 20px;
+   
+}
+
+
+/* logo */
+
+
+.camel {
+    float: left;
+    height: 55px;
+    /* margin-top: 50px; */
+    margin-left: 100px;
+    border-color: black;
+
+}
+
+/* hamburger */
+
+.menu {
+    border-radius: 28px;
+
+}
+
+/* content */
+.name {
+    font-size: 8em;
+    margin-left: 100px;
+    margin-top: 150px;
+    color: white;
+    font-weight: bold;
+}
+
+p {
+    margin: 0;
+    margin-left: 6em;
+    color: white;
+}
+
+.button {
+    border: 1px solid white;
+    border-radius: 1em;
+    margin-left: 15vh;
+    font-size: larger;
+    background-color: white;
+    width: 150px;
+    height: 40px;
+    margin-top: 15px;
+}
+
+.span {
+    color: white;
+}
+
+
+/* cards */
+
+.grid-container {
+
+    float: right;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    margin-right: 120px;
+    margin-top: -350px;
+}
+
+.card {
+    height: 250px;
+    width: 200px;
+    border-radius: 20px;
+    margin: 20px;
+    /* margin-top: -200px; */
+  
+
+
+}
+
+.card1 {
+    transition: 20%;
+    border: grey;
+    background-image: url(./photo1.jpeg);
+    transition: 0.4s all;
+    /* text-align: center; */
+    padding-top: 25px;
+    box-sizing: border-box;
+    color: white;
+    padding-left: 15px;
+}
+.one{
+    font-size: larger;
+   
+}
+
+.card2 {
+    box-sizing: border-box;
+    color: white;
+    padding-left: 15px;
+    padding-top: 25px;
+    background-image: url(./mountains.jpeg);
+    background-size: cover;
+}
+.two{
+    font-size: larger;
+   
+}
+
+.card3 {
+    box-sizing: border-box;
+    padding-top: 25px;
+    color: white;
+    padding-left: 15px;
+    background-image: url(./pyramid.jpeg);
+    background-size: cover;
+}
+.three{
+    font-size: larger;
+   
+}
+
+.card4 {
+    box-sizing: border-box;
+    padding-top: 25px;
+    color: white;
+    padding-left: 15px;
+    background-image: url(./kathari\ desesrt.jpeg);
+    background-size: cover;
+}
+.four{
+    font-size: larger;
+   
+}
+
+.card1 :hover {
+    /* transform: translate(2px, 2px, 2px, grey); */
+    /* border: grey; */
+    margin-top: 25px;
+    box-shadow: 10px, 10px, 10px;
+
+
+}
+
+
+
+
+
+@media(min-width:360px) and (max-width:720px) {
+    .grid-container {
+        margin-top: 10px;
+        margin-right: 10px;
+        flex-wrap: wrap;
+        grid-template-columns: repeat(1, auto);
+        
+    }
+    .card{
+        width: 55vw;
+        margin-right: 10px;
+        
+    }
+    .list{
+        display: none;
+    }
+    .menu{
+        float: right;
+        margin-top: -70px;
+        margin-right: 50px;
+    }
+    .camel{
+        margin-top: -70px;
+    }
+   
+    
+}
+@media (min-width:720px) and (max-width:1000px){
+    .grid-container {
+        margin-top: 20px;
+        /* justify-content: stretch; */
+        float: none;
+        justify-content: center;
+        grid-template-columns: repeat(1, auto);
+    }
+    .card{
+        width: 55vw;
+    }
+    .list{
+        display: none;
+    }
+    .menu{
+        float: right;
+        margin-top: -110px;
+        margin-right: 50px;
+        
+    }
+    .camel{
+        margin-top: -110px;
+    }
+}
+
+
+
